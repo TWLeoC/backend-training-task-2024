@@ -10,9 +10,9 @@
 const alexAge = 25;
 const alexMembershipID = "GYM2024-12345";
 const isRunningOnTreadmill =true;
-console.log(alexAge)
-console.log(alexMembershipID)
-console.log(alexAge)
+console.log(alexAge);
+console.log(alexMembershipID);
+console.log(alexAge);
 
 // ### 題目二：變數命名練習
 // - 瑜伽團課 - 300 元
@@ -21,28 +21,45 @@ console.log(alexAge)
 // 情境：Alex 這個月的運動預算有 3000 元
 // 請修改以下中文變數名稱，讓他符合變數語意
 
-const 變數一 = 300;
-const 變數二 = 500;
-const 變數三 = 1500;
-const 變數四 = 3000;
+const 瑜伽團課 = 300;
+const 重訓團課 = 500;
+const 重訓１對１課程 = 1500;
+let AlexBudget = 3000;
 
 // ### 題目三：變數計算
 // 呈上題，Alex 想要規劃好自己的運動課程，需符合以下三個條件，請將花費總數計算在 AlexBudget 上，一起幫幫他吧！
 // 條件一：一定至少要買 1 堂重訓團課和瑜伽團課
 // 條件二：瑜伽團課只能一次買 3 堂
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
-
+let lessonAdd = [];
+let tuition = 0;
+if (lessonAdd.length == 0){
+  lessonAdd.push('重訓團課', '瑜伽團課', '瑜伽團課', '瑜伽團課', '重訓１對１課程');
+  tuition = tuition + 500 + 300*3 + 1500;
+  // console.log(tuition);
+}
+AlexBudget -= tuition;
 console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 
 // ### 題目四：線稿圖截圖，看圖宣告變數
 // 請參考資料夾內 q4.webp 圖片
 // 請依照你看到的內容來嘗試設計變數和值（至少 3 個）
 
+const package14Price = 2520;
+const lessonTime = 50;
+const discount = 0.9;
+
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
 // 情境：Alex 在往健身房的路上，望向城市的風景，請描述她看到的一切，並宣告變數與賦予值
 // 4-1. Alex 在等紅綠燈，他抬頭看一下現在是紅燈，還有 28 秒綠燈（最多 3 個宣告）
 // 4-2. 目前一起等待的機車有 8 台
 // 4.3. Alex 望向天空，看到天上有 5 朵白雲和 1 顆太陽
+
+let waitToGo = true;
+let isRed = true;
+let waitScooter = 8;
+let cloud = 5;
+const sun = 1;
 
 // ### 題目六：情境題：簡單變數計算
 // 情境：Alex 每天都會帶著 2000cc 的水壺
@@ -55,6 +72,9 @@ console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 
 let myWater = 2000; // 水壺容量
 myWater -= 500; // 早上喝了 500cc
+myWater -= 800; // 中午喝了 800cc
+myWater += 1000; // 運動前裝 1000cc
+myWater -= 700; // 運動時喝 700cc
 
 console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
