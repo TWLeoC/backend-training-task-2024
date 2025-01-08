@@ -24,13 +24,14 @@ console.log(alexAge);
 const 瑜伽團課 = 300;
 const 重訓團課 = 500;
 const 重訓１對１課程 = 1500;
-let AlexBudget = 3000;
+const AlexBudget2 = 3000;
 
 // ### 題目三：變數計算
 // 呈上題，Alex 想要規劃好自己的運動課程，需符合以下三個條件，請將花費總數計算在 AlexBudget 上，一起幫幫他吧！
 // 條件一：一定至少要買 1 堂重訓團課和瑜伽團課
 // 條件二：瑜伽團課只能一次買 3 堂
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
+let AlexBudget = 3000;
 let lessonAdd = [];
 let tuition = 0;
 if (lessonAdd.length == 0){
@@ -87,20 +88,26 @@ console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
 let totalBill = 0;
 const machineUsePrice = 50;
+const groupClass = 150;
+let machineUsePriceTotal = 0;
+let groupClassesTotal = 0;
+
+machineUsePriceTotal = 50*3;
+groupClassesTotal = 150*2;
 
 console.log(
-  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${total}元`
+  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${totalBill}元`
 );
 
 // ### 題目八：變數重新賦予值
 // 情境：請依照以下程式碼告知答案是多少，並在下方用註解方式寫上這五行程式碼做了什麼事
 // 以下程式碼請勿變更
 let a = 8; // 範例：宣告了一個 a 的變數，並賦予了一個 8 的數字型別
-let b = 0;
-a = 13;
-a = b + 4;
-a - b;
-b += 1;
+let b = 0; // 宣告了一個 b 的變數，並賦予了一個 0 的數字型別
+a = 13; // 將 a 變數賦予新的數字型別 13
+a = b + 4; // 計算 a 變數 b + 4
+a - b; // 計算 a - b 但未賦值給其他變數
+b += 1;  // 將原本的 b 變數加 1 後，賦予給 b
 
 // ### 題目九：型別查詢
 // 請不要觀看 console.log，透過註解告知解答每個變數的型別
@@ -114,13 +121,19 @@ let h = f + g;
 // 請從以下新增註解，告知上面每行各別是哪些型別
 // a 是 string
 // b 是 ???
+// c 是 string
+// d 是 number
+// e 是 string
+// f 是 boolean
+// g 是 number
+// h 是 number
 
 // ### 題目十：傳值與傳參考
 // 情境：請依照程式碼告知答案是多少，並在下方用註解方式寫上這五行程式碼做了什麼事
 // 以下程式碼請勿變更
 
-let numberArr1 = [5, 10, 15];
-let numberArr2 = numberArr1;
-numberArr2.push(20);
-numberArr2 = [25, 30, 35];
-console.log(numberArr1, numberArr2);
+let numberArr1 = [5, 10, 15]; // 宣告了一個 numberArr1 的變數，並賦予了一個[5, 10, 15]的陣列
+let numberArr2 = numberArr1; // 宣告了一個 numberArr2 的變數，並將 numberArr1 的陣列也賦予給他
+numberArr2.push(20); // 對 numberArr2 的陣列，新加入 20 這個數值
+numberArr2 = [25, 30, 35]; // 將 numberArr2 的陣列，賦予新的陣列 [25, 30, 35] 
+console.log(numberArr1, numberArr2); // [5, 10, 15, 20], [5, 10, 15]
