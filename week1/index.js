@@ -23,7 +23,7 @@ console.log(alexAge);
 
 const 瑜伽團課 = 300;
 const 重訓團課 = 500;
-const 重訓１對１課程 = 1500;
+const 重訓１對１課程   = 1500;
 const AlexBudget2 = 3000;
 
 // ### 題目三：變數計算
@@ -94,6 +94,7 @@ let groupClassesTotal = 0;
 
 machineUsePriceTotal = 50*3;
 groupClassesTotal = 150*2;
+totalBill = machineUsePriceTotal + groupClassesTotal
 
 console.log(
   `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${totalBill}元`
@@ -104,7 +105,7 @@ console.log(
 // 以下程式碼請勿變更
 let a = 8; // 範例：宣告了一個 a 的變數，並賦予了一個 8 的數字型別
 let b = 0; // 宣告了一個 b 的變數，並賦予了一個 0 的數字型別
-a = 13; // 將 a 變數賦予新的數字型別 13
+a = 13; // 將 a 變數重新賦予數字型別 13
 a = b + 4; // 計算 a 變數 b + 4
 a - b; // 計算 a - b 但未賦值給其他變數
 b += 1;  // 將原本的 b 變數加 1 後，賦予給 b
